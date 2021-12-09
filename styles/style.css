@@ -15,9 +15,37 @@ h1 {
 }
 
 .square {
+  position: relative;
   width: 100px;
   height: 100px;
   background-color: var(--square-color);
   border: 1px solid gray;
   display: inline-block;
+}
+.o {
+
+}
+
+.o::after {
+  position: absolute;
+  content: "\1F412";
+  font-size: 3rem;
+  line-height: 100px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.x::after {
+  position: absolute;
+  content: "\1F981";
+  font-size: 3rem;
+  line-height: 100px;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
