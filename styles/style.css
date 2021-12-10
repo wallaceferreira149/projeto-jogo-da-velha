@@ -15,18 +15,18 @@ h1 {
 }
 
 .square {
-  position: relative;
   width: 100px;
   height: 100px;
   background-color: var(--square-color);
   border: 1px solid gray;
   display: inline-block;
 }
-.o {
 
+.o {
+  position: relative;
 }
 
-.o::after {
+.o:after {
   position: absolute;
   content: "\1F412";
   font-size: 3rem;
@@ -38,7 +38,11 @@ h1 {
   right: 0;
 }
 
-.x::after {
+.x {
+  position: relative;
+}
+
+.x:after {
   position: absolute;
   content: "\1F981";
   font-size: 3rem;
